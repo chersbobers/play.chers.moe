@@ -15,12 +15,11 @@
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                         url('https://files.catbox.moe/k317uf.jpg') 
                         center center no-repeat fixed;
-            background-size: cover; /* This makes it fill the screen */
+            background-size: cover; 
             
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #EBE2CA;
             
-            /* These flex properties center your content on the screen */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,7 +27,6 @@
 
         .holder {
             width: 990px;
-            /* margin: auto handled by the flex body above */
         }
 
         /* ASCII Art Styling */
@@ -62,6 +60,26 @@
             border-radius: 5px;       
             text-align: center;
             margin-bottom: 20px;
+        }
+
+        /* News Box Style */
+        .news-update {
+            background: #850000;
+            color: #fcc;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ff0000;
+            text-align: left;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        .news-header {
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
         }
 
         button {
@@ -111,20 +129,27 @@
     </pre>
 
     <div class="navigation">
-        <a href="index.html">HOME</a> | <a href="dono.html">DONATE</a> 
+        <a href="index.html">HOME</a> | <a href="dono.html">DONATE</a>  
     </div>
 
     <div class="container">
-        <h1>Play chers mc today!</h1>
-        <p>Chers mc is a free lifesteal server with no pay to win!</p>
+        <h1>play the freest life steal</h1>
+        <p> chers mc is free and great you can play by yourself or with your friends </p>
         
         <div style="margin: 30px 0;">
             <button onclick="copyText()">Copy IP Address</button>
         </div>
 
-        <h3>This server is run on hopes and dreams. <br>
-            <a href="dono.html">See where your money would go &raquo;</a>
+        <h3>this server is run on hopes and dreams donations would always help! <br>
+            <a href="dono.html">see where your money would go if you donate &raquo;</a>
         </h3>
+
+        <div class="news-update">
+            <span class="news-header">latest server news - 05/1/2026</span>
+            progress is steady. currently working on: <strong>spawn and the shop</strong><br>
+            completed: spawnroom, roles. <br>
+            estimated finish time: 06/1/2026
+        </div>
     </div>
 </div>
 
