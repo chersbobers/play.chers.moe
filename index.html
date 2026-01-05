@@ -1,12 +1,139 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>chers mc</title>
+    <style>
+        /* This ensures the background fills the entire browser window */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Background set to cover the full screen */
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://files.catbox.moe/k317uf.jpg') 
+                        center center no-repeat fixed;
+            background-size: cover; /* This makes it fill the screen */
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #EBE2CA;
+            
+            /* These flex properties center your content on the screen */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .holder {
+            width: 990px;
+            /* margin: auto handled by the flex body above */
+        }
+
+        /* ASCII Art Styling */
+        .ascii-logo {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            line-height: 1.2;
+            color: #ffffff;
+            text-align: center;
+            white-space: pre;
+            display: block;
+            margin: 0 auto 20px auto;
+            text-shadow: 3px 3px 0px rgba(0,0,0,1);
+            font-weight: bold;
+        }
+
+        .container {
+            background-color: rgba(40, 42, 46, 0.9);
+            border: 1px #5C5C5C solid;
+            padding: 30px;
+            box-shadow: 1px 2px 20px #000000;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .navigation {
+            background-color: rgba(40, 42, 46, 1);
+            border: 1px #5C5C5C solid;
+            padding: 10px;
+            box-shadow: 1px 2px 10px #000000;
+            border-radius: 5px;       
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: rgba(60, 62, 66, 1);
+            color: #EBE2CA;
+            padding: 12px 25px;
+            border-radius: 5px;
+            border: 1px #5C5C5C solid;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #5C5C5C;
+            border-color: #EBE2CA;
+        }
+
+        a {
+            text-decoration: none;
+            color: #EBE2CA;
+            font-weight: bold;
+        }    
+
+        a:hover {
+            text-shadow: 1px 1px 1px #3f3f3f;
+            color: #ffffff;
+        }
+
+        h1 {
+            color: #f2f2f2;
+            text-shadow: 2px 2px 10px #000000;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-<h1> Play chers mc today! </h1>
-<p>Chers mc is a free lifesteal server with no pay to win!</p>
-<button>IP</button>
 
-<h3> This server is run on hops and dreams a donation would help. <a href="dono.html">see were your money would go</a></h3>
+<div class="holder">
+    <pre class="ascii-logo">
+  ____ _    _ _____ ____  ____  __  __  ____ 
+ / ___| |__| | ____|  _ \/ ___||  \/  |/ ___|
+| |   |  __  |  _| | |_) \___ \| |\/| | |    
+| |___| |  | | |___|  _ < ___) | |  | | |___ 
+ \____|_|  |_|_____|_| \_\____/|_|  |_|\____|
+    </pre>
+
+    <div class="navigation">
+        <a href="index.html">HOME</a> | <a href="dono.html">DONATE</a> 
+    </div>
+
+    <div class="container">
+        <h1>Play chers mc today!</h1>
+        <p>Chers mc is a free lifesteal server with no pay to win!</p>
+        
+        <div style="margin: 30px 0;">
+            <button onclick="copyText()">Copy IP Address</button>
+        </div>
+
+        <h3>This server is run on hopes and dreams. <br>
+            <a href="dono.html">See where your money would go &raquo;</a>
+        </h3>
+    </div>
+</div>
+
+<script>
+    function copyText() {
+        navigator.clipboard.writeText("mc.chers.moe");
+        alert("IP Copied: mc.chers.moe");
+    }
+</script>
 
 </body>
+</html>

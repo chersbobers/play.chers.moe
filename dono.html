@@ -1,17 +1,118 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>chers mc - dono</title>
+    <style>
+        /* Ensures the background and layout fill the whole screen */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Background matches home page with the Catbox image */
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://files.catbox.moe/k317uf.jpg') 
+                        center center no-repeat fixed;
+            background-size: cover;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: #EBE2CA;
+
+            /* Vertical and horizontal centering */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .holder {
+            width: 990px;
+        }
+
+        .container {
+            background-color: rgba(40, 42, 46, 0.9);
+            border: 1px #5C5C5C solid;
+            padding: 30px;
+            box-shadow: 1px 2px 20px #000000;
+            border-radius: 5px;
+            text-align: center; /* Centering text for a portal feel */
+        }
+
+        h1 {
+            color: #f2f2f2;
+            text-shadow: 2px 2px 10px #000000;
+            border-bottom: 1px solid #5C5C5C;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Server Specs Box */
+        .specs {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-left: 4px solid #850000; /* Dark red anarchy accent */
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px auto;
+            line-height: 1.6;
+            display: inline-block; /* Keeps the box tight around the text */
+            text-align: left; /* Keeps list items aligned left */
+        }
+
+        .tag-info {
+            color: #ffcc00; /* Gold color for the donor tag mention */
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #EBE2CA;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #5C5C5C;
+            padding: 10px 20px;
+            background: rgba(60, 62, 66, 1);
+            border-radius: 5px;
+            transition: 0.2s;
+        }
+
+        .back-link:hover {
+            background: #5C5C5C;
+            color: #fff;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-<h1> Here you go </h1>
-<p>Servers are not free, Right now I am paying $6 a month your money would go to upgrading and paying for this service.</p>
-<p> server specs:</p>
-- 4gb of ddr4 ram <br>
-- 20gb of storage <br>
-- an Threadripper 3970X cpu <br>
-- 10gbit shared network <br>
-:( <br>
 
-<button> Help us escape these specs and donate</button>
-<h5>you also get a donater tag </h5>
+<div class="holder">
+    <div class="container">
+        <h1>Support Chers MC</h1>
+        
+        <p>Servers are not free. Right now I am paying $6 a month.<br>
+        Your money would go directly toward upgrading and maintaining this service.</p>
+        
+        <p><strong>Current Server Specs:</strong></p>
+        <div class="specs">
+            - 4GB DDR4 RAM<br>
+            - 20GB Storage<br>
+            - AMD Threadripper 3970X CPU<br>
+            - 10Gbit Shared Network
+        </div>
+
+        <p>:( <br> <strong>Sorry, donations are not setup yet.</strong></p>
+
+        <h5 class="tag-info">Note: All supporters receive a custom [Donator] tag in-game.</h5>
+
+        <a href="index.html" class="back-link">&laquo; Return to Home</a>
+    </div>
+</div>
+
 </body>
+</html>
